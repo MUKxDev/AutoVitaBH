@@ -1,0 +1,160 @@
+:root {
+  --bg: #181818;
+  --text: #ffffff;
+  --primary: #3f3f3f;
+  --secondary: #d34049;
+}
+
+*,
+*::after,
+*::before {
+  -webkit-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-app-region: no-drag;
+  cursor: default;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--bg);
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  background-color: var(--bg);
+}
+
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding: 20px;
+}
+
+header a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+  /* margin-left: 30px; */
+}
+
+.space {
+  height: 10vw;
+}
+
+.text {
+  color: var(--text);
+  transition: all 0.5s;
+}
+
+.scale {
+  transition: all 0.5s;
+  transform: scale(1, 1);
+}
+.scale:hover {
+  transition: all 0.5s;
+  transform: scale(1.3, 1.3);
+}
+
+.gray:hover {
+  color: var(--primary);
+  transition: all 0.5s;
+}
+.red:hover {
+  color: var(--secondary);
+  transition: all 0.5s;
+}
+
+.bh {
+  color: var(--secondary);
+}
+
+.image {
+  width: 100%;
+}
+
+.logo {
+  margin: 0 auto;
+}
+
+.logo:hover {
+  cursor: default;
+}
+
+span {
+  display: inline-block;
+  font-size: 8vw;
+}
+.logo span {
+  text-transform: uppercase;
+  margin: 15px;
+}
+
+.logo h1 {
+  text-align: center;
+}
+
+.main {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  height: auto;
+}
+
+.main .graphic {
+  margin: auto;
+  padding: 0 25%;
+}
+
+.about-us {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.center {
+  margin: auto;
+}
+
+.about-us .graphic {
+  padding: 10%;
+}
+
+.services {
+  display: grid;
+}
+
+.services span {
+  margin-left: 10vw;
+}
+.services-grid-one {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  position: absolute;
+  grid-gap: 20vw;
+  margin: 10vw;
+}
+.services-grid-two {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  position: absolute;
+  grid-gap: 20vw;
+  margin: 35vw 10vw 10vw 10vw;
+}
+
+.services-dots {
+  position: absolute;
+  margin: 10vw;
+  z-index: -1;
+}
