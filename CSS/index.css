@@ -21,10 +21,6 @@
   font-family: "Montserrat", sans-serif;
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
 body {
   background-color: var(--bg);
   margin: 0;
@@ -80,6 +76,14 @@ li {
 
 .bh {
   color: var(--secondary);
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.home {
+  color: var(--primary);
 }
 
 .image {
