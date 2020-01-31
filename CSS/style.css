@@ -1,5 +1,6 @@
 :root {
   --bg: #181818;
+  /* --bg: #40d2ab; */
   --text: #ffffff;
   --primary: #3f3f3f;
   --secondary: #d34049;
@@ -137,6 +138,7 @@ span {
 
 .services {
   display: grid;
+  margin-bottom: 40vw;
 }
 
 .services span {
@@ -160,5 +162,66 @@ span {
 .services-dots {
   position: absolute;
   margin: 10vw;
+  z-index: -1;
+}
+
+.our-team {
+  display: grid;
+  position: relative;
+  margin-bottom: 20vw;
+}
+.our-team .title {
+  margin-bottom: 20vw;
+}
+
+.our-team h1 {
+  text-align: center;
+}
+
+.our-team h2 {
+  text-align: center;
+}
+.our-team h2 span {
+  font-size: 2vw;
+  color: var(--text);
+}
+
+.our-team img {
+  display: block;
+  border-radius: 100px;
+  margin: 0 auto;
+}
+
+.team-grid-one {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  position: absolute;
+  grid-gap: 5vw;
+  margin: 12vw 10vw 10vw 10vw;
+}
+.team-grid-two {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  position: absolute;
+  grid-gap: 5vw;
+  margin: 32vw 18vw 10vw 18vw;
+}
+
+.team-member {
+  display: grid;
+  width: 12vw;
+  grid-template-rows: auto auto;
+  justify-content: center;
+}
+
+.team-dots .one {
+  position: absolute;
+  margin: -12vw 24vw 0vw 24vw;
+  z-index: -1;
+}
+
+.team-dots .two {
+  position: absolute;
+  margin: 8vw 32vw 0vw 32vw;
   z-index: -1;
 }
