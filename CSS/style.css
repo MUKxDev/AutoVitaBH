@@ -32,6 +32,16 @@ main {
   background-color: var(--bg);
 }
 
+/* side nav bar */
+
+#side-nav-bar {
+  display: none;
+}
+
+.sidenav {
+  display: none;
+}
+
 nav ul {
   display: flex;
   flex-wrap: wrap;
@@ -81,10 +91,6 @@ li {
 
 .bold {
   font-weight: bold;
-}
-
-.home {
-  color: var(--primary);
 }
 
 .image {
@@ -214,6 +220,10 @@ span {
   justify-content: center;
 }
 
+.team-member:hover {
+  z-index: 1;
+}
+
 .team-dots .one {
   position: absolute;
   margin: -12vw 24vw 0vw 24vw;
@@ -224,4 +234,359 @@ span {
   position: absolute;
   margin: 8vw 32vw 0vw 32vw;
   z-index: -1;
+}
+
+.our-projects {
+  margin: 10vw;
+}
+
+.our-projects .grid {
+  display: grid;
+  grid-template-columns: auto 20% auto;
+  justify-content: space-between;
+}
+.our-projects .title {
+  margin-bottom: 5vw;
+}
+
+.our-projects h1 {
+  text-align: center;
+}
+
+.our-projects h2 {
+  text-align: center;
+}
+.our-projects h2 span {
+  font-size: 1.5vw;
+  color: var(--text);
+}
+
+.project-container {
+  margin: auto;
+}
+
+.projects-dots {
+  height: 30vw;
+  width: auto;
+  margin: auto;
+}
+.projects-dots img {
+  margin: 0 auto;
+  height: 30vw;
+  width: auto;
+}
+
+.contact-us {
+  margin: 0 10vw;
+}
+
+.contact-us .grid {
+  display: grid;
+  grid-template-rows: auto auto;
+  justify-content: space-between;
+  grid-gap: 3vw;
+}
+.contact-us .title {
+  margin-bottom: 5vw;
+}
+
+.contact-us h1 {
+  text-align: center;
+}
+
+.contact-us p {
+  font-size: 2vw;
+}
+.contact-us form {
+  display: grid;
+  grid-template-areas:
+    "name email"
+    "subject subject"
+    "message message"
+    "send send";
+  grid-gap: 2vw;
+  position: relative;
+}
+.contact-us form input,
+textarea {
+  width: 100%;
+  font-size: 1.5vw;
+  background-color: var(--primary);
+  border: none;
+  border-radius: 5px;
+  height: 4vw;
+  color: var(--text);
+  padding: 5px;
+}
+
+.contact-us .name {
+  grid-area: name;
+}
+.contact-us .email {
+  grid-area: email;
+}
+.contact-us .subject {
+  grid-area: subject;
+}
+.contact-us .message {
+  grid-area: message;
+  size: 200;
+  height: 10vw;
+  resize: vertical;
+}
+.contact-us .send {
+  grid-area: send;
+  background-color: var(--secondary);
+  color: var(--bg);
+  width: 12vw;
+  margin-left: 72vw;
+  bottom: 0.5vw;
+  position: absolute;
+}
+
+.contact-us .send:hover {
+  color: var(--text);
+  transition: 0.5s;
+}
+
+.footer {
+  margin: 0 10vw 2vw 10vw;
+}
+
+.footer .grid {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-content: center;
+  grid-gap: 1vw;
+}
+
+.footer img {
+  height: 3vw;
+  width: auto;
+}
+
+.footer p {
+  color: var(--secondary);
+  font-size: 2vw;
+  margin: auto;
+}
+
+/*  .......................... smaller screen .......................... */
+
+@media only screen and (max-width: 600px) {
+  .main {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+    height: auto;
+    grid-gap: 5vw;
+    margin-top: 10vw;
+    margin-bottom: 10vw;
+  }
+
+  .main .logo {
+    order: 1;
+  }
+
+  .main .graphic {
+    order: 2;
+  }
+
+  .about-us {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+  }
+
+  .about-us h1 {
+    text-align: center;
+  }
+
+  .services {
+    margin-bottom: 0vw;
+  }
+
+  .services h1 {
+    margin: auto;
+    text-align: center;
+  }
+
+  .services h1 span {
+    margin: auto;
+    text-align: center;
+  }
+
+  .services img {
+    width: 60%;
+    margin: auto;
+  }
+
+  .services-grid-one {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto;
+    position: relative;
+    grid-gap: 5vw;
+    margin: 10vw 10vw 0 10vw;
+  }
+  .services-grid-two {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto;
+    position: relative;
+    grid-gap: 5vw;
+    margin: 5vw 10vw 0 10vw;
+  }
+
+  .services-dots {
+    display: none;
+  }
+
+  .our-team {
+    display: grid;
+    position: relative;
+    margin-bottom: 0vw;
+  }
+  .our-team .title {
+    margin-bottom: 0vw;
+  }
+  .team-grid-one {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto auto;
+    position: relative;
+    grid-gap: 10vw;
+    margin: 10vw 10vw 5vw 10vw;
+  }
+  .team-grid-two {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto;
+    position: relative;
+    grid-gap: 10vw;
+    margin: 0vw 10vw 0vw 10vw;
+  }
+  .team-dots .one {
+    display: none;
+  }
+
+  .team-dots .two {
+    display: none;
+  }
+
+  .team-member {
+    width: 50%;
+    margin: auto;
+  }
+
+  .team-member h2 span {
+    font-size: medium;
+  }
+
+  .our-projects .grid {
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    justify-content: space-between;
+    grid-gap: 10vw;
+  }
+
+  .projects-dots {
+    display: none;
+  }
+
+  .our-projects h2 span {
+    font-size: medium;
+    color: var(--text);
+  }
+
+  .contact-us form {
+    display: grid;
+    grid-template-areas:
+      "name name"
+      "email email"
+      "subject subject"
+      "message message"
+      "send send";
+    grid-gap: 2vw;
+    position: relative;
+  }
+
+  .contact-us p {
+    font-size: medium;
+  }
+  .contact-us form input,
+  textarea {
+    font-size: medium;
+    height: 10vw;
+  }
+
+  .contact-us .message {
+    height: 30vw;
+  }
+  .contact-us .send {
+    color: var(--text);
+    width: 20vw;
+    margin-left: auto;
+    position: relative;
+  }
+
+  .nav-bar {
+    display: none;
+  }
+
+  /* side nav bar */
+
+  #side-nav-bar {
+    display: block;
+    color: var(--text);
+    padding-top: 2vw;
+    padding-left: 5vw;
+    position: fixed;
+    z-index: 1;
+  }
+
+  .sidenav {
+    display: block;
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: var(--bg);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    text-align: center;
+  }
+
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: var(--text);
+    display: block;
+    transition: 0.3s;
+  }
+
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+
+  @media screen and (max-height: 450px) {
+    .sidenav {
+      padding-top: 15px;
+    }
+    .sidenav a {
+      font-size: 18px;
+    }
+  }
 }

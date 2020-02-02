@@ -8,16 +8,26 @@
     <link rel="stylesheet" href="/CSS/style.css" />
   </head>
   <body id="main" >
+    <!-- side nav bar -->
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a class="text red" href="#about-us" onclick="closeNav()">About Us</a>
+      <a class="text red" href="#services" onclick="closeNav()">Services</a>
+      <a class="text red" href="#our-team" onclick="closeNav()">Our Team</a>
+      <a class="text red" href="#our-projects" onclick="closeNav()">Our Projects</a>
+      <a class="text red" href="#contact-us" onclick="closeNav()">Contact Us</a>
+    </div>
+    <span id="side-nav-bar" onclick="openNav()">&#9776;</span>
     <!-- Nav bar -->
     <div class="nav-bar">
       <header>
         <nav>
           <ul>
-            <li class="scale"><a class="text red bold home" href="#main">Home</a class="scale"></li>
+            <!-- <li class="scale"><a class="text red bold home" href="#main">Home</a class="scale"></li> -->
             <li class="scale"><a class="text red" href="#about-us">About Us</a></li>
             <li class="scale"><a class="text red" href="#services">Services</a></li>
             <li class="scale"><a class="text red" href="#our-team">Our Team</a></li>
-            <li class="scale"><a class="text red" href="#our-clients">Our Clients</a></li>
+            <li class="scale"><a class="text red" href="#our-projects">Our Projects</a></li>
             <li class="scale"><a class="text red" href="#contact-us">Contact Us</a></li class="scale">
           </ul>
         </nav>
@@ -185,16 +195,75 @@
     </div>
     <div class="space"></div>
     
-    <!-- Our Clients Section -->
-    <div class="our-clients" id="our-clients"></div>
+    <!-- Our Projects Section -->
+    <div class="our-projects" id="our-projects">
+      <div class="title">
+        <h1>
+            <span class="text scale gray">Our Projects</span>
+        </h1>
+    </div>
+    <div class="grid">
+      <div class="project-container scale">
+        <div>
+          <a href="http://autovitabh.com/projects/zainab" target="_blank">
+          <img src="/images/zainab-website@2x.png" alt="" class="image">
+        </div>
+        <h2>
+          <span>Dr. Zainab Al-Khudhairi Website</span>
+        </h2>
+      </a>
+      </div>
+      <div class="projects-dots">
+        <img src="/images/slice9@2x.png" alt="" class="image">
+      </div>
+      <div class="project-container scale">
+        <a href="http://autovitabh.com/" target="_blank">
+        <div>
+          <img src="/images/RSW@2x.png" alt="" class="image">
+        </div>
+        <h2>
+          <span>Drift and Freestyle Bahrain Website</span>
+        </h2>
+      </a>
+      </div>
+    </div>
+    </div>
     <div class="space"></div>
 
     <!-- Contact Us Section -->
-    <div class="contact-us" id="contact-us"></div>
+    <div class="contact-us" id="contact-us">
+      <div class="title">
+        <h1>
+            <span class="text scale gray">Contact Us</span>
+        </h1>
+    </div>
+    <div class="grid">
+      <p class="text">
+        We are interested in freelance opportunities – especially ambitious or large projects. However, if you have other request or question, don’t hesitate to contact us using below form either.
+      </p>
+      <form action="/action_page.php">
+        <input type="text" name="Name" placeholder="Name" class="name">
+        <input type="text" name="Email" placeholder="Email" class="email">
+        <input type="text" name="Subject" placeholder="Subject" class="subject">
+        <textarea class="message" name="message" placeholder="Message.."></textarea>
+        <input type="submit" value="Send" class="send scale bold">
+      </form>
+    </div>
+    </div>
 <div class="space"></div>
 
     <!-- Footer -->
-    <div class="footer"></div>
+    <div class="footer">
+      <div class="grid">
+        <a href="#" target="_blank">
+        <img src="/images/slice21@2x.png" alt="" class="image scale">
+      </a>
+      <a href="#" target="_blank">
+        <img src="/images/slice22@2x.png" alt="" class="image scale">
+      </a>
+        <p class="text bold">AutoViteBH</p>
+      </div>
+    </div>
 
     <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0.0/dist/smooth-scroll.polyfills.min.js"></script>
     <script src="/JS/main.js"></script>
