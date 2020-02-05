@@ -1,3 +1,5 @@
+var db = firebase.firestore();
+
 var emailsRef = db.collection("emails");
 
 emailsRef.get().then(snapshot => {
