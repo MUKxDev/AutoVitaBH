@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>AutoVite BH</title>
     <link rel="stylesheet" href="/CSS/style.css" />
+    
   </head>
   <body id="main" >
     <!-- side nav bar -->
@@ -241,10 +242,10 @@
       <p class="text">
         We are interested in freelance opportunities – especially ambitious or large projects. However, if you have other request or question, don’t hesitate to contact us using below form either.
       </p>
-      <form action="/action_page.php">
-        <input type="text" name="Name" placeholder="Name" class="name">
-        <input type="text" name="Email" placeholder="Email" class="email">
-        <input type="text" name="Subject" placeholder="Subject" class="subject">
+      <form action="/php/contactform.php" method="post">
+        <input type="text" name="name" placeholder="Name" class="name">
+        <input type="text" name="mail" placeholder="Email" class="email">
+        <input type="text" name="subject" placeholder="Subject" class="subject">
         <textarea class="message" name="message" placeholder="Message.."></textarea>
         <input type="submit" value="Send" class="send scale bold">
       </form>
@@ -264,6 +265,8 @@
         <p class="text bold">AutoViteBH</p>
       </div>
     </div>
+
+<script src="/JS/emails.js"></script>
 
     <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0.0/dist/smooth-scroll.polyfills.min.js"></script>
     <script src="/JS/main.js"></script>
