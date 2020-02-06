@@ -6,6 +6,19 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>AutoVite BH</title>
     <link rel="stylesheet" href="/CSS/style.css" />
+
+    <!-- this is firebase init [start] -->
+    <!-- update the version number as needed -->
+    <script  src="/__/firebase/7.8.0/firebase-app.js"></script>
+    <!-- include only the Firebase features as you need -->
+    <script  src="/__/firebase/7.8.0/firebase-auth.js"></script>
+    <script  src="/__/firebase/7.8.0/firebase-database.js"></script>
+    <script  src="/__/firebase/7.8.0/firebase-messaging.js"></script>
+    <script  src="/__/firebase/7.8.0/firebase-storage.js"></script>
+    <script  src="/__/firebase/7.8.0/firebase-firestore.js"></script>
+    <!-- initialize the SDK after all desired features are loaded -->
+    <script  src="/__/firebase/init.js"></script>
+    <!-- this is firebase init [end] -->
     
   </head>
   <body id="main" >
@@ -242,12 +255,12 @@
       <p class="text">
         We are interested in freelance opportunities – especially ambitious or large projects. However, if you have other request or question, don’t hesitate to contact us using below form either.
       </p>
-      <form action="/php/contactform.php" method="post">
-        <input type="text" name="name" placeholder="Name" class="name">
-        <input type="text" name="mail" placeholder="Email" class="email">
-        <input type="text" name="subject" placeholder="Subject" class="subject">
-        <textarea class="message" name="message" placeholder="Message.."></textarea>
-        <input type="submit" value="Send" class="send scale bold">
+      <form action="" id="contact-form">
+        <input type="text" name="name" placeholder="Name" class="name" id="name">
+        <input type="text" name="mail" placeholder="Email" class="email" id="mail">
+        <input type="text" name="subject" placeholder="Subject" class="subject" id="subject">
+        <textarea class="message" name="message" placeholder="Message.." id="message"></textarea>
+        <input type="submit" value="Send" class="send scale bold" id="submit">
       </form>
     </div>
     </div>
@@ -265,6 +278,7 @@
         <p class="text bold">AutoViteBH</p>
       </div>
     </div>
+
 
 <script src="/JS/emails.js"></script>
 
