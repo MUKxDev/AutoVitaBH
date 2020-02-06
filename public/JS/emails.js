@@ -4,14 +4,7 @@ var db = firebase.database();
 //emails doc ref
 var emailsRef = db.ref("emails");
 
-// emailsRef.get().then(snapshot => {
-//   snapshot.docs.forEach(doc => {
-//     console.log(doc.data());
-//   });
-// });
-
 // code
-
 ("use strict");
 
 //grab a form
@@ -39,8 +32,6 @@ function submitMail() {
       subject: subject.value,
       message: message.value
     });
-
-    // alert("Mail sent, Thank you.");
   }
 }
 
@@ -51,6 +42,6 @@ if (form) {
     submitMail();
 
     //shows alert if everything went well.
-    return alert("Data Successfully Sent to Realtime Database");
+    return alert("Mail sent, Thank you.");
   });
 }

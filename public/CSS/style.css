@@ -51,11 +51,11 @@ nav ul {
 
 header a {
   text-decoration: none;
+  cursor: pointer;
 }
 
 li {
   list-style: none;
-  /* margin-left: 30px; */
 }
 
 .space {
@@ -145,26 +145,25 @@ span {
 .services {
   display: grid;
   width: 100%;
-  margin-bottom: 40vw;
 }
 
 .services span {
   margin-left: 10vw;
 }
-.services-grid-one {
-  display: grid;
-  grid-template-columns: auto auto auto;
-  grid-template-rows: auto;
-  position: absolute;
-  grid-gap: 20vw;
-  margin: 10vw;
+
+.services-container {
+  margin: 2vw 10vw 10vw 10vw;
 }
-.services-grid-two {
+
+.services-grid {
   display: grid;
   grid-template-columns: auto auto auto;
-  position: absolute;
-  grid-gap: 20vw;
-  margin: 35vw 10vw 10vw 10vw;
+  justify-content: space-between;
+  grid-gap: 10vw;
+}
+
+.services-grid .image {
+  width: 15vw;
 }
 
 .services-dots {
@@ -175,11 +174,9 @@ span {
 
 .our-team {
   display: grid;
-  position: relative;
-  margin-bottom: 20vw;
 }
 .our-team .title {
-  margin-bottom: 20vw;
+  margin-bottom: 2vw;
 }
 
 .our-team h1 {
@@ -187,7 +184,8 @@ span {
 }
 
 .our-team h2 {
-  text-align: center;
+  text-align: start;
+  margin: auto 1vw;
 }
 .our-team h2 span {
   font-size: 2vw;
@@ -198,53 +196,38 @@ span {
   display: block;
   border-radius: 100px;
   margin: 0 auto;
+  width: 10vw;
 }
 
-.team-grid-one {
-  display: grid;
-  grid-template-columns: auto auto auto auto auto;
-  position: absolute;
-  grid-gap: 5vw;
-  margin: 12vw 10vw 10vw 10vw;
+.team-container {
+  margin: 2vw 10vw 10vw 10vw;
 }
-.team-grid-two {
+
+.team-grid {
   display: grid;
-  grid-template-columns: auto auto auto auto;
-  position: absolute;
+  grid-template-columns: auto auto auto;
+
+  justify-content: space-between;
   grid-gap: 5vw;
-  margin: 32vw 18vw 10vw 18vw;
 }
 
 .team-member {
   display: grid;
-  width: 12vw;
-  grid-template-rows: auto auto;
-  justify-content: center;
+  grid-template-columns: auto auto;
+  justify-content: start;
 }
 
 .team-member:hover {
   z-index: 1;
 }
 
-.team-dots .one {
-  position: absolute;
-  margin: -12vw 24vw 0vw 24vw;
-  z-index: -1;
-}
-
-.team-dots .two {
-  position: absolute;
-  margin: 8vw 32vw 0vw 32vw;
-  z-index: -1;
-}
-
 .our-projects {
-  margin: 10vw;
+  margin: 0vw 10vw 10vw 10vw;
 }
 
 .our-projects .grid {
   display: grid;
-  grid-template-columns: auto 20% auto;
+  grid-template-columns: 45% 45%;
   justify-content: space-between;
 }
 .our-projects .title {
@@ -261,10 +244,21 @@ span {
 .our-projects h2 span {
   font-size: 1.5vw;
   color: var(--text);
+  cursor: pointer;
 }
 
 .project-container {
   margin: auto;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.project-container a {
+  cursor: pointer;
+}
+.project-container img {
+  margin: 0 auto;
+  cursor: pointer;
 }
 
 .projects-dots {
@@ -323,27 +317,31 @@ textarea {
 
 .contact-us .name {
   grid-area: name;
+  cursor: text;
 }
 .contact-us .email {
   grid-area: email;
+  cursor: text;
 }
 .contact-us .subject {
   grid-area: subject;
+  cursor: text;
 }
 .contact-us .message {
   grid-area: message;
   size: 200;
   height: 10vw;
   resize: vertical;
+  cursor: text;
 }
 .contact-us .send {
   grid-area: send;
   background-color: var(--secondary);
   color: var(--bg);
   width: 12vw;
-  margin-left: 72vw;
+  margin-left: auto;
   bottom: 0.5vw;
-  position: absolute;
+  cursor: pointer;
 }
 
 .contact-us .send:hover {
@@ -363,8 +361,9 @@ textarea {
 }
 
 .footer img {
-  height: 3vw;
+  height: 5vw;
   width: auto;
+  cursor: pointer;
 }
 
 .footer p {
@@ -383,7 +382,7 @@ textarea {
     height: auto;
     grid-gap: 5vw;
     margin-top: 10vw;
-    margin-bottom: 10vw;
+    margin-bottom: 20vw;
   }
 
   .main .logo {
@@ -392,6 +391,7 @@ textarea {
 
   .main .graphic {
     order: 2;
+    margin-top: 10vw;
   }
 
   .about-us {
@@ -418,76 +418,56 @@ textarea {
     text-align: center;
   }
 
-  .services img {
-    width: 60%;
-    margin: auto;
+  .services-grid .image {
+    width: 30vw;
   }
 
-  .services-grid-one {
-    display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: auto auto auto;
-    position: relative;
-    grid-gap: 5vw;
-    margin: 10vw 10vw 0 10vw;
-  }
-  .services-grid-two {
-    display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: auto auto auto;
-    position: relative;
-    grid-gap: 5vw;
-    margin: 5vw 10vw 0 10vw;
+  .services-container {
+    margin-top: 5vw;
   }
 
-  .services-dots {
-    display: none;
+  .services-grid {
+    grid-template-columns: auto auto;
+    justify-content: space-evenly;
   }
 
   .our-team {
-    display: grid;
-    position: relative;
     margin-bottom: 0vw;
   }
   .our-team .title {
     margin-bottom: 0vw;
   }
-  .team-grid-one {
-    display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: auto auto auto auto auto;
-    position: relative;
-    grid-gap: 10vw;
-    margin: 10vw 10vw 5vw 10vw;
-  }
-  .team-grid-two {
-    display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: auto auto auto auto;
-    position: relative;
-    grid-gap: 10vw;
-    margin: 0vw 10vw 0vw 10vw;
-  }
-  .team-dots .one {
-    display: none;
+
+  .team-container {
+    margin-top: 5vw;
   }
 
-  .team-dots .two {
-    display: none;
+  .team-grid {
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: center;
   }
 
   .team-member {
-    width: 50%;
-    margin: auto;
+    margin: 5vw 0;
   }
 
+  .our-team img {
+    display: block;
+    border-radius: 100px;
+    margin: auto;
+    width: 25vw;
+  }
+
+  .team-member h2 {
+    margin: auto 0 auto 8vw;
+  }
   .team-member h2 span {
-    font-size: medium;
+    font-size: 5vw;
   }
 
   .our-projects .grid {
     grid-template-columns: auto;
-    grid-template-rows: auto;
     justify-content: space-between;
     grid-gap: 10vw;
   }
@@ -529,7 +509,11 @@ textarea {
     color: var(--text);
     width: 20vw;
     margin-left: auto;
-    position: relative;
+  }
+
+  .footer p {
+    font-size: 4vw;
+    margin: auto 1vw;
   }
 
   .nav-bar {
