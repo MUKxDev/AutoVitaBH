@@ -9,7 +9,7 @@
 *,
 *::after,
 *::before {
-  -webkit-user-select: none;
+  -webkit-user-select: text;
   -webkit-user-drag: none;
   -webkit-app-region: no-drag;
   cursor: default;
@@ -305,6 +305,11 @@ span {
 }
 .contact-us form input,
 textarea {
+  -webkit-user-select: text;
+  -khtml-user-select: text;
+  -moz-user-select: text;
+  -ms-user-select: text;
+  user-select: text;
   width: 100%;
   font-size: 1.5vw;
   background-color: var(--primary);
