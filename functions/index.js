@@ -36,11 +36,13 @@ var goMail = function(name, mailFrom, subject, meassage) {
     subject: subject, // Subject line
     text: "Name: " + name + "MailFrom: " + mailFrom + "Message: " + meassage, // plain text body
     html:
-      "<h2>Name: " +
+      "<h2>Subject: " +
+      subject +
+      "</br> <h3>Name: " +
       name +
-      "</h2></br> <h2>MailFrom: " +
+      "</h3></br> <h3>MailFrom: " +
       mailFrom +
-      "</h2></br> <p>Message: " +
+      "</h3></br> <p>" +
       meassage +
       "</p>" // html body
   };
