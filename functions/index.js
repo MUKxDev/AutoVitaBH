@@ -18,21 +18,25 @@ const nodemailerPassword = functions.config().nodemailer.pass;
 admin.initializeApp();
 
 //creating function for sending emails
-var goMail = function(name, mailFrom, subject, meassage) {
+var goMail = function (name, mailFrom, subject, meassage) {
   //transporter is a way to send your emails
   const transporter = nodemailer.createTransport({
     service: "gmail",
     auth: {
       user: nodemailerEmail,
-      pass: nodemailerPassword
-    }
+      pass: nodemailerPassword,
+    },
   });
 
   // setup email data with unicode symbols
   //this is how your email are going to look like
   const mailOptions = {
     from: "AutoVita BH <" + nodemailerEmail + ">", // sender address
-    to: "autovitabh@gmail.com", // list of receivers
+    to: [
+      "autovitabh@gmail.com",
+      "mohd98.mm@gmail.com",
+      "mudafaralmusaed97@gmail.com",
+    ], // list of receivers
     subject: subject, // Subject line
     text: "Name: " + name + "MailFrom: " + mailFrom + "Message: " + meassage, // plain text body
     html:
@@ -44,11 +48,11 @@ var goMail = function(name, mailFrom, subject, meassage) {
       mailFrom +
       "</h3></br> <p>" +
       meassage +
-      "</p>" // html body
+      "</p>", // html body
   };
 
   //this is callback function to return status to firebase console
-  const getDeliveryStatus = function(error, info) {
+  const getDeliveryStatus = function (error, info) {
     if (error) {
       return console.log(error);
     }
@@ -63,7 +67,7 @@ var goMail = function(name, mailFrom, subject, meassage) {
 //.onDataAdded is watches for changes in database
 exports.onDataAdded = functions.database
   .ref("/emails/{sessionId}")
-  .onCreate(function(snap, context) {
+  .onCreate(function (snap, context) {
     //here we catch a new data, added to firebase database, it stored in a snap variable
     const createdData = snap.val();
     var name = createdData.name;
