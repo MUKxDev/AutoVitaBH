@@ -19,6 +19,10 @@
     <!-- initialize the SDK after all desired features are loaded -->
     <script  src="/__/firebase/init.js"></script>
     <!-- this is firebase init [end] -->
+
+    <!-- favicon start -->
+    <link rel="icon" href="/images/favicon/favicon.png" sizes="16x16 32x32" type="image/png">
+    <!-- favicon end -->
     
   </head>
   <body id="main" >
@@ -27,8 +31,9 @@
       <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
       <a class="text red" href="#about-us" onclick="closeNav()">About Us</a>
       <a class="text red" href="#services" onclick="closeNav()">Services</a>
-      <a class="text red" href="#our-team" onclick="closeNav()">Our Team</a>
       <a class="text red" href="#our-projects" onclick="closeNav()">Our Projects</a>
+      <a class="text red" href="#our-team" onclick="closeNav()">Our Team</a>
+      
       <a class="text red" href="#contact-us" onclick="closeNav()">Contact Us</a>
     </div>
     <span id="side-nav-bar" onclick="openNav()">&#9776;</span>
@@ -40,8 +45,8 @@
             <!-- <li class="scale"><a class="text red bold home" href="#main">Home</a class="scale"></li> -->
             <li class="scale"><a class="text red" href="#about-us">About Us</a></li>
             <li class="scale"><a class="text red" href="#services">Services</a></li>
-            <li class="scale"><a class="text red" href="#our-team">Our Team</a></li>
             <li class="scale"><a class="text red" href="#our-projects">Our Projects</a></li>
+            <li class="scale"><a class="text red" href="#our-team">Our Team</a></li>
             <li class="scale"><a class="text red" href="#contact-us">Contact Us</a></li class="scale">
           </ul>
         </nav>
@@ -110,6 +115,29 @@
     </div>
 <div class="space"></div>
 
+<!-- Our Projects Section -->
+<div class="our-projects" id="our-projects">
+  <div class="title">
+    <h1>
+        <span class="text scale gray">Our Projects</span>
+    </h1>
+</div>
+<div class="grid">
+  <div class="project-container scale">
+    <div>
+      <a href="https://zainabalkhudairi.com/" target="_blank">
+      <img src="/images/zainab-website@2x.png" alt="" class="image">
+    </div>
+    <h2>
+      <span>Dr. Zainab Al-Khudhairi Website</span>
+    </h2>
+  </a>
+  </div>
+  
+</div>
+</div>
+<div class="space"></div>
+
     <!-- Our Team Section -->
     <div class="our-team" id="our-team">
       <div class="title">
@@ -120,32 +148,32 @@
     <!-- Team Grid-->
     <div class="team-container">
     <div class="team-grid">
-      <div class="team-member scale">
-        <img src="/images/abood.jpeg" alt="" class="image">
+      <a class="team-member scale" href="https://www.instagram.com/aalsais/" target="_blank">
+        <img src="/images/abood.jpg" alt="" class="image">
         <h2>
           <span>Abdulla</span>
           <br>
           <span>Alsais</span>
         </h2>
-      </div>
+      </a>
       <div class="team-member scale">
-        <img src="/images/abood.jpeg" alt="" class="image">
+        <img src="/images/mudafar.jpg" alt="" class="image">
         <h2>
           <span>Mudafar</span>
           <br>
           <span>Almusaed</span>
         </h2>
       </div>
-      <div class="team-member scale">
-        <img src="/images/MUK.jpeg" alt="" class="image">
+        <a class="team-member scale" href="https://www.instagram.com/muk._/" target="_blank">
+        <img src="/images/MUK.jpg" alt="" class="image">
         <h2>
           <span>Mohamed</span>
           <br>
           <span>Mukhtar</span>
         </h2>
-      </div>
+      </a>
       <div class="team-member scale">
-        <img src="/images/abood.jpeg" alt="" class="image">
+        <img src="/images/murtadha.jpg" alt="" class="image">
         <h2>
           <span>Murtadha</span>
           <br>
@@ -153,7 +181,7 @@
         </h2>
       </div>
       <div class="team-member scale">
-        <img src="/images/abood.jpeg" alt="" class="image">
+        <img src="/images/salem.jpg" alt="" class="image">
         <h2>
           <span>Salem</span>
           <br>
@@ -161,7 +189,7 @@
         </h2>
       </div>
       <div class="team-member scale">
-        <img src="/images/abood.jpeg" alt="" class="image">
+        <img src="/images/khshm.jpg" alt="" class="image">
         <h2>
           <span>Ahmed</span>
           <br>
@@ -169,7 +197,7 @@
         </h2>
       </div>
       <div class="team-member scale">
-        <img src="/images/abood.jpeg" alt="" class="image">
+        <img src="/images/abo-ali.jpg" alt="" class="image">
         <h2>
           <span>Hussain</span>
           <br>
@@ -177,7 +205,7 @@
         </h2>
       </div>
       <div class="team-member scale">
-        <img src="/images/abood.jpeg" alt="" class="image">
+        <img src="/images/abed.jpg" alt="" class="image">
         <h2>
           <span>Ahmed</span>
           <br>
@@ -185,7 +213,7 @@
         </h2>
       </div>
       <div class="team-member scale">
-        <img src="/images/abood.jpeg" alt="" class="image">
+        <img src="/images/boten.jpg" alt="" class="image">
         <h2>
           <span>A.Mutaleb</span>
           <br>
@@ -198,37 +226,7 @@
     </div>
     <div class="space"></div>
     
-    <!-- Our Projects Section -->
-    <div class="our-projects" id="our-projects">
-      <div class="title">
-        <h1>
-            <span class="text scale gray">Our Projects</span>
-        </h1>
-    </div>
-    <div class="grid">
-      <div class="project-container scale">
-        <div>
-          <a href="http://autovitabh.com/projects/zainab" target="_blank">
-          <img src="/images/zainab-website@2x.png" alt="" class="image">
-        </div>
-        <h2>
-          <span>Dr. Zainab Al-Khudhairi Website</span>
-        </h2>
-      </a>
-      </div>
-      <div class="project-container scale">
-        <a href="http://autovitabh.com/" target="_blank">
-        <div>
-          <img src="/images/RSW@2x.png" alt="" class="image">
-        </div>
-        <h2>
-          <span>Drift and Freestyle Bahrain Website</span>
-        </h2>
-      </a>
-      </div>
-    </div>
-    </div>
-    <div class="space"></div>
+    
 
     <!-- Contact Us Section -->
     <div class="contact-us" id="contact-us">
@@ -239,7 +237,7 @@
     </div>
     <div class="grid">
       <p class="text">
-        We are interested in freelance opportunities – especially ambitious or large projects. However, if you have other request or question, don’t hesitate to contact us using below form either.
+        We are interested in freelance opportunities – especially ambitious or large projects. However, if you have other requests or questions, don’t hesitate to contact us using the form below.
       </p>
       <form action="" id="contact-form">
         <input type="text" name="name" placeholder="Name" class="name" id="name">
@@ -255,10 +253,12 @@
     <!-- Footer -->
     <div class="footer">
       <div class="grid">
+        <!-- github -->
         <a href="https://github.com/M7mdMuk/AutoVitaBH" target="_blank">
         <img src="/images/slice21@2x.png" alt="" class="image scale">
       </a>
-      <a href="#" target="_blank">
+      <!-- instagram -->
+      <a href="https://www.instagram.com/autovitabh/" target="_blank">
         <img src="/images/slice22@2x.png" alt="" class="image scale">
       </a>
         <p class="text bold">AutoViteBH</p>

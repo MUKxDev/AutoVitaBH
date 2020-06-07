@@ -1,6 +1,5 @@
 :root {
   --bg: #181818;
-  /* --bg: #40d2ab; */
   --text: #ffffff;
   --primary: #3f3f3f;
   --secondary: #d34049;
@@ -366,7 +365,7 @@ textarea {
 }
 
 .footer img {
-  height: 5vw;
+  height: 3vw;
   width: auto;
   cursor: pointer;
 }

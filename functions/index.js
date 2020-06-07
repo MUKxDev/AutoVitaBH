@@ -32,7 +32,7 @@ var goMail = function(name, mailFrom, subject, meassage) {
   //this is how your email are going to look like
   const mailOptions = {
     from: "AutoVita BH <" + nodemailerEmail + ">", // sender address
-    to: nodemailerEmail, // list of receivers
+    to: "autovitabh@gmail.com", // list of receivers
     subject: subject, // Subject line
     text: "Name: " + name + "MailFrom: " + mailFrom + "Message: " + meassage, // plain text body
     html:
