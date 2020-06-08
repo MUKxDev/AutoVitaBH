@@ -38,6 +38,7 @@ var goMail = function (name, mailFrom, subject, meassage) {
       "mudafaralmusaed97@gmail.com",
       "aboodikoo2@gmail.com",
       "Abdullaalsais1995@gmail.com",
+      "Ahmedk.aa6@gmail.com",
     ], // list of receivers
     subject: subject, // Subject line
     text: "Name: " + name + "MailFrom: " + mailFrom + "Message: " + meassage, // plain text body
